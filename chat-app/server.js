@@ -5,7 +5,7 @@ const server = net.createServer();
 const clients = [];
 
 server.on('connection', (socket) => {
-  console.log(`A client connected`);
+  console.log(`A client connected!`);
 
   clients.push(socket);
 
@@ -13,6 +13,10 @@ server.on('connection', (socket) => {
     for (const client of clients) {
       client.write(data);
     }
+  });
+
+  socket.on('end', () => {
+    console.log(`Someone disconnected!`);
   });
 });
 
