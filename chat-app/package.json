@@ -1,0 +1,11 @@
+{
+  "name": "chat-app",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
